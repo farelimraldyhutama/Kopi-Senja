@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kafe Pintar - Menu Digital</title>
-    <!-- Menghubungkan ke file CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +11,7 @@
     <!-- Bagian Header Kafe -->
     <header class="cafe-header">
         <h1>☕ Kopi Senja</h1>
-        <p>Silakan pilih menu favoritmu di bawah ini!</p>
+        <p>Silakan pilih menu dan pesan langsung via WhatsApp!</p>
     </header>
 
     <!-- Kolom Pencarian -->
@@ -28,17 +27,40 @@
         <button class="filter-btn" data-category="cemilan">Cemilan</button>
     </div>
 
-    <!-- Daftar Menu (Tempat JavaScript merender data) -->
+    <!-- Daftar Menu -->
     <main id="menuContainer" class="menu-container">
-        <!-- Kartu menu akan muncul secara otomatis di sini lewat JavaScript -->
+        <!-- Menu akan dirender oleh JavaScript -->
     </main>
 
-    <!-- Footer Sederhana -->
+    <!-- Bagian Keranjang & Checkout WhatsApp -->
+    <section class="cart-section">
+        <h2>🛒 Pesanan Anda</h2>
+        <div id="cartList" class="cart-list">
+            <p class="empty-cart">Belum ada menu yang dipilih.</p>
+        </div>
+
+        <div class="form-group">
+            <label for="customerName">Nama Pemesan:</label>
+            <input type="text" id="customerName" placeholder="Contoh: Budi">
+        </div>
+
+        <div class="form-group">
+            <label for="tableNumber">Nomor Meja:</label>
+            <input type="text" id="tableNumber" placeholder="Contoh: Meja 05">
+        </div>
+
+        <div class="total-container">
+            <span>Total Pembayaran:</span>
+            <strong id="totalPrice">Rp 0</strong>
+        </div>
+
+        <button id="waCheckoutBtn" class="wa-btn" disabled>Kirim Pesanan ke WhatsApp 📱</button>
+    </section>
+
     <footer>
         <p>&copy; 2026 Kopi Senja. Dibuat dengan Semangat.</p>
     </footer>
 
-    <!-- Menghubungkan ke file JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
