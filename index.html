@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafe Pintar - Menu Digital</title>
+    <!-- Menghubungkan ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Bagian Header Kafe -->
+    <header class="cafe-header">
+        <h1>☕ Kopi Senja</h1>
+        <p>Silakan pilih menu favoritmu di bawah ini!</p>
+    </header>
+
+    <!-- Kolom Pencarian -->
+    <div class="search-container">
+        <input type="text" id="searchBox" placeholder="Cari menu makanan atau minuman...">
+    </div>
+
+    <!-- Tombol Filter Kategori -->
+    <div class="category-container">
+        <button class="filter-btn active" data-category="semua">Semua</button>
+        <button class="filter-btn" data-category="kopi">Kopi</button>
+        <button class="filter-btn" data-category="makanan">Makanan</button>
+        <button class="filter-btn" data-category="cemilan">Cemilan</button>
+    </div>
+
+    <!-- Daftar Menu (Tempat JavaScript merender data) -->
+    <main id="menuContainer" class="menu-container">
+        <!-- Kartu menu akan muncul secara otomatis di sini lewat JavaScript -->
+    </main>
+
+    <!-- Footer Sederhana -->
+    <footer>
+        <p>&copy; 2026 Kopi Senja. Dibuat dengan Semangat.</p>
+    </footer>
+
+    <!-- Menghubungkan ke file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
